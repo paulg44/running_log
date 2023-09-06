@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  distance: 1
+  duration: 1
+  pace: 1
+  surface: MyString
+  description: MyString
+
+two:
+  distance: 1
+  duration: 1
+  pace: 1
+  surface: MyString
+  description: MyString

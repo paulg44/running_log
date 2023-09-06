@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2023-09-06
+  distance: 1
+  duration: 2023-09-06 17:52:16
+  pace: 1
+  surface: MyString
+  description: MyString
+
+two:
+  date: 2023-09-06
+  distance: 1
+  duration: 2023-09-06 17:52:16
+  pace: 1
+  surface: MyString
+  description: MyString
