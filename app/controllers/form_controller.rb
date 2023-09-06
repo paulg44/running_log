@@ -7,7 +7,7 @@ class FormController < ApplicationController
         @test = Test.new(test_params)
         if @test.save
             flash[:success] = "Run was logged successfully"
-           redirect_to log_path
+           redirect_to display_path
         else
             render :new
         end
