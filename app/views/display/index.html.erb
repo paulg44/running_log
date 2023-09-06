@@ -1,4 +1,13 @@
 <h2>Run Logs</h2>
+
+<%= search_form_for @q, url: display_path, method: :get do |f| %>
+  <div class="field">
+    <%= f.label :surface_cont, "Search by Surface" %>
+    <%= f.text_field :surface_cont %>
+  </div>
+  <%= f.submit "Search" %>
+<% end %>
+
 <table class="table table-bordered">
 <thead class="thead-dark">
     <tr>
