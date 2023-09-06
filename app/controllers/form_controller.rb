@@ -1,6 +1,7 @@
 class FormController < ApplicationController
     def new 
         @test = Test.new
+        @q = Test.ransack
     end
     
     def create 
