@@ -4,7 +4,10 @@ Rails.application.routes.draw do
   # Main Page
   root to: "main#index"
 
-  # GET enter details and table page (run log)
-  get "run_log", to: "log#index"
+  # GET log form page
+  # POST to test table
+  get "/log", to: "log#index"
+  get "log_run", to: "form#new"
+  post "log_run", to: "form#create"
 
 end
