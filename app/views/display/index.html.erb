@@ -11,6 +11,7 @@
 <table class="table table-bordered">
 <thead class="thead-dark">
     <tr>
+      <th scope="col">ID</th>
       <th scope="col">Date</th>
       <th scope="col">Distance</th>
       <th scope="col">Duration</th>
@@ -22,6 +23,7 @@
   <tbody>
 <% @tests.each do |test| %>
     <tr>
+      <td><%= test.id %></td>
       <td><%= test.date %></td>
       <td><%= test.distance %> km's</td>
       <td><%= test.duration %></td>
