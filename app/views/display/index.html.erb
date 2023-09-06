@@ -1,0 +1,9 @@
+<h2>Run Logs</h2>
+<table>
+<% @tests.each do |test| %>
+<tr>
+<td><%= test.date %>
+<td><%= test.distance %>
+</tr>
+<% end %>
+</table>
