@@ -8,8 +8,6 @@
   <%= f.submit "Search", class: "btn btn-primary m-3"%>
 <% end %>
 
-<%= link_to "Edit an Entry", edit_log_path%>
-
 <%= form_tag(display_destroy_path, method: :delete) do %>
   <%= text_field_tag :id, nil, placeholder: 'Enter ID to delete' %>
   <%= submit_tag 'Delete Record', class: 'btn btn-danger' %>
@@ -37,6 +35,7 @@
       <td><%= test.pace %> per km</td>
       <td><%= test.surface %></td>
       <td><%= test.description %></td>
+      <td><%= link_to "Edit", edit_update_path(test), class: "btn btn-warning" %></td>
     </tr>
 <% end %>
   </tbody>

@@ -11,8 +11,9 @@ Rails.application.routes.draw do
   post "log_run", to: "form#create"
 
   # Edit log
-  get "/edit_log", to: "edit#index"
-  put "/edit_log", to: "edit#update", as: "update_test"
+  get "/edit_update/:id", to: "edit#index", as: "edit_update"
+  put "/edit_update/:id", to: "edit#update"
+  put "/edit_update/:id", to: "edit#delete"
 
   # Delete Log
   delete '/display/destroy', to: 'display#destroy', as: 'display_destroy'

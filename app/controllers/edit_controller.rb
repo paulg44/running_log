@@ -1,4 +1,7 @@
 class EditController < ApplicationController
+    def index 
+        @test = Test.find(params[:id])
+    end
      # Edit an entry using ID
      def update 
         @test = Test.find(params[:id])

@@ -1,12 +1,8 @@
 <h2>Edit entry</h2>
-<p>Use ID tag to edit an entry</p>
 
-<%= form_tag() do |form| %> 
+<%= form_with model: @test, url: edit_update_path(@test), method: :put, local:true do |form| %> 
 
-<div class="mb-2">
-   <%= form.label :id %>
-   <%= form.text_field :id,  class: "form-control", placeholder: "Enter ID" %>
-</div>
+
    <%= form.label :date %>
    <%= form.text_field :date,  class: "form-control", placeholder: "Enter date" %>
 </div>
