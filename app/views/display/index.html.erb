@@ -5,8 +5,10 @@
     <%= f.label :surface_cont, "Search by Surface" %>
     <%= f.text_field :surface_cont %>
   </div>
-  <%= f.submit "Search" %>
+  <%= f.submit "Search", class: "btn btn-primary m-3"%>
 <% end %>
+
+<%= link_to "Edit an Entry", edit_log_path%>
 
 <table class="table table-bordered">
 <thead class="thead-dark">

@@ -10,6 +10,10 @@ Rails.application.routes.draw do
   get "log_run", to: "form#new"
   post "log_run", to: "form#create"
 
+  # Edit log
+  get "/edit_log", to: "edit#index"
+  put "/edit_log", to: "edit#update"
+
   # Display Logs
   get "/display", to: "display#index"
 
