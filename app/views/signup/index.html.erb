@@ -1,8 +1,8 @@
 <div class="d-flex align-items-center justify-content-center flex-column">
   <h1>Running Log
     <h1>
-      <p>Welcome!</p>
-      <h3>Sign In</h3>
+      <p>Sign Up</p>
+      <h3>Enter information to sign up</h3>
       <%= form_with model: @User do |form| %>
         <div class="mb-2">
           <%= form.label :username %>
@@ -19,6 +19,5 @@
         <div class="mb-2">
           <%= form.submit "Sign In", class: "btn btn-primary" %>
         </div>
-        <%= link_to "No Account? Sign Up", sign_up_path %>
       <% end %>
     </div>

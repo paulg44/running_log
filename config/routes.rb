@@ -4,6 +4,10 @@ Rails.application.routes.draw do
   # Main Page
   root to: "main#index"
 
+  # Sign Up page
+  get "/sign_up", to: "signup#index"
+  post "sign_up", to: "signup#create"
+
   # GET log form page
   # POST to test table
   get "/log", to: "log#index"

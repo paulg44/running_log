@@ -1,32 +1,29 @@
-<%= form_with model: @test, url: log_run_path do |form| %> 
-
-<div class="mb-2">
-   <%= form.label :date %>
-   <%= form.text_field :date,  class: "form-control", placeholder: "Enter date" %>
-</div>
-<div class="mb-2">
-   <%= form.label :distance %>
-   <%= form.text_field :distance, class: "form-control", placeholder: "Enter distance"%>
-</div>   
-<div class="mb-2">   
-   <%= form.label :duration %>
-   <%= form.text_field :duration, class: "form-control", placeholder: "Enter duration"%>
-</div>   
-<div class="mb-2">   
-   <%= form.label :pace %>
-   <%= form.text_field :pace, class: "form-control", placeholder: "Enter pace"%>
-</div>   
-<div class="mb-2">   
-   <%= form.label :surface %>
-   <%= form.text_field :surface, class: "form-control", placeholder: "Enter surface type"%>
-</div>   
-<div class="mb-2">   
-   <%= form.label :description %>
-   <%= form.text_field :description, class: "form-control", placeholder: "Add description"%>
-</div>   
-
-<div class="mb-2">
-<%= form.submit "Add log", class: "btn btn-primary"%>
-</div>
-
+<%= form_with model: @test, url: log_run_path do |form| %>
+  <div class="mb-2">
+    <%= form.label :date %>
+    <%= form.text_field :date,  class: "form-control", placeholder: "Enter date" %>
+  </div>
+  <div class="mb-2">
+    <%= form.label :distance %>
+    <%= form.text_field :distance, class: "form-control", placeholder: "Enter distance"%>
+  </div>
+  <div class="mb-2">
+    <%= form.label :duration %>
+    <%= form.text_field :duration, class: "form-control", placeholder: "Enter duration"%>
+  </div>
+  <div class="mb-2">
+    <%= form.label :pace %>
+    <%= form.text_field :pace, class: "form-control", placeholder: "Enter pace"%>
+  </div>
+  <div class="mb-2">
+    <%= form.label :surface %>
+    <%= form.text_field :surface, class: "form-control", placeholder: "Enter surface type"%>
+  </div>
+  <div class="mb-2">
+    <%= form.label :description %>
+    <%= form.text_field :description, class: "form-control", placeholder: "Add description"%>
+  </div>
+  <div class="mb-2">
+    <%= form.submit "Add log", class: "btn btn-primary"%>
+  </div>
 <% end %>

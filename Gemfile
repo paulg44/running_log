@@ -48,6 +48,9 @@ gem "devise"
 # Use ransack for search
 gem "ransack"
 
+# Use html indentation(hopefully)
+gem 'htmlbeautifier'
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
