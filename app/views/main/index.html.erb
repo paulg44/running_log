@@ -3,13 +3,13 @@
     <h1>
       <p>Welcome!</p>
       <h3>Sign In</h3>
-      <ul>
+      <ul class="list-group-flush">
         <% if user_signed_in? %>
-          <li><%= link_to "Hello, #{current_user.email}", edit_user_registration_path %></li>
-          <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+          <li class="list-group-item"><%= link_to "Hello, #{current_user.email}", edit_user_registration_path %></li>
+          <li class="list-group-item"><%= link_to "Sign Out", destroy_user_session_path, data: {turbo_method: :delete} %></li>
         <% else %>
-          <li><%= link_to "Sign In", new_user_session_path %></li>
-          <li><%= link_to "Sign Up", new_user_registration_path %></li>
+          <li class="list-group-item"><%= link_to "Sign In", new_user_session_path %></li>
+          <li class="list-group-item"><%= link_to "Sign Up", new_user_registration_path %></li>
         <% end %>
       </ul>
     </div>
