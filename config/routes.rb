@@ -1,12 +1,10 @@
 # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
 Rails.application.routes.draw do
+  devise_for :users
+
   # Main Page
   root to: "main#index"
-
-  # Sign Up page
-  get "/sign_up", to: "signup#index"
-  post "sign_up", to: "signup#create"
 
   # GET log form page
   # POST to test table
@@ -24,5 +22,6 @@ Rails.application.routes.draw do
 
   # Display Logs
   get "/display", to: "display#index"
+
 
 end

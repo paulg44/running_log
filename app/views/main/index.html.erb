@@ -3,22 +3,13 @@
     <h1>
       <p>Welcome!</p>
       <h3>Sign In</h3>
-      <%= form_with model: @User do |form| %>
-        <div class="mb-2">
-          <%= form.label :username %>
-          <%= form.text_field :username,  class: "form-control", placeholder: "Enter username" %>
-        </div>
-        <div class="mb-2">
-          <%= form.label :password %>
-          <%= form.text_field :password,  class: "form-control", placeholder: "Enter password" %>
-        </div>
-        <div class="mb-2">
-          <%= form.label :password_confirmation %>
-          <%= form.text_field :password_confirmation,  class: "form-control", placeholder: "Confirm Password" %>
-        </div>
-        <div class="mb-2">
-          <%= form.submit "Sign In", class: "btn btn-primary" %>
-        </div>
-        <%= link_to "No Account? Sign Up", sign_up_path %>
-      <% end %>
+      <ul>
+        <% if user_signed_in? %>
+          <li><%= link_to "Hello, #{current_user.email}", edit_user_registration_path %></li>
+          <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+        <% else %>
+          <li><%= link_to "Sign In", new_user_session_path %></li>
+          <li><%= link_to "Sign Up", new_user_registration_path %></li>
+        <% end %>
+      </ul>
     </div>
