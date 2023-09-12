@@ -9,6 +9,7 @@ I will aim to create a running log with an authenticated log in using Devise and
 - Edit logs using the edit button in table
 - Delete logs by entering corresponding ID tag
 - Search through logs by surface(string) using Ransack
+- Sign UP/IN/OUT using Devise
 - Easy navigation through views(pages) with navbar
 
 # Tech Stack (& Gems)
@@ -63,3 +64,8 @@ I have added a delete functionality, at the moment it is an input that takes a p
 I hugely overestimated what I'd get done in two evenings (around 6.5). I decided to concentrate on getting a fully functional log working and I am going to carry on working on it over the weekend as I've enjoyed what I've done so far and Ruby in general. I would like to complete it and, genuinely, it's something I will use in the future, better than excel spreadsheets!
 I also need to look more into the "types" of inputs in the models, the duration distance and pace all need work. I tried a few different things like decimals but they didnt work how I intended, more research is needed.
 I like the Model, View, Controller & Routes aspect of Ruby. It seems quite difficult to understand and a lot of folders/files at first but the more you do the more it makes sense and can be easier to find bugs when things are separate.
+
+## Session 3
+
+I created a log in page using my own form and model, only to find out that using Devise you dont need to code all that it is pre-written for you, which is a brilliant addition to the app. I can still style it to my choice.
+I had to add something called turbo_method on the sign out page as that wouldn't work. Overall Devise is a great "Gem" and something I will look a lot more into.
