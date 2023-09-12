@@ -1,15 +1,22 @@
 <h2>Run Logs</h2>
+<%# Search Form %>
 <%= search_form_for @q, url: display_path, method: :get do |f| %>
-  <div class="field">
+  <div class="form-group">
     <%= f.label :surface_cont, "Search by Surface" %>
-    <%= f.text_field :surface_cont %>
+    <%= f.text_field :surface_cont, class: "form-control" %>
+    <%= f.label :surface_cont, "Search by distance" %>
+    <%= f.text_field :distance_gteq, class: "form-control" %>
+    <%= f.text_field :distance_lteq, class: "form-control" %>
   </div>
   <%= f.submit "Search", class: "btn btn-primary m-3"%>
+  <%= link_to "Clear", request.path, class: "btn btn-default" %>
 <% end %>
+<%# Delete Button %>
 <%= form_tag(display_destroy_path, method: :delete) do %>
   <%= text_field_tag :id, nil, placeholder: 'Enter ID to delete' %>
   <%= submit_tag 'Delete Record', class: 'btn btn-danger' %>
 <% end %>
+<%# Display %>
 <table class="table table-bordered">
   <thead class="thead-dark">
     <tr>
