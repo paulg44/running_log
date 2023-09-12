@@ -1,15 +1,14 @@
 <div class="d-flex align-items-center justify-content-center flex-column">
   <h1>Running Log
-    <h1>
-      <p>Welcome!</p>
-      <h3>Sign In</h3>
-      <ul class="list-group-flush">
-        <% if user_signed_in? %>
-          <li class="list-group-item"><%= link_to "Hello, #{current_user.email}", edit_user_registration_path %></li>
-          <li class="list-group-item"><%= link_to "Sign Out", destroy_user_session_path, data: {turbo_method: :delete} %></li>
-        <% else %>
-          <li class="list-group-item"><%= link_to "Sign In", new_user_session_path %></li>
-          <li class="list-group-item"><%= link_to "Sign Up", new_user_registration_path %></li>
-        <% end %>
-      </ul>
-    </div>
+  </h1>
+  <h3>Welcome!</h3>
+  <ul class="list-group-flush">
+    <% if user_signed_in? %>
+      <li class="list-group-item"><%= link_to "Hello, #{current_user.email}", edit_user_registration_path %></li>
+      <li class="list-group-item"><%= link_to "Sign Out", destroy_user_session_path, data: {turbo_method: :delete} %></li>
+    <% else %>
+      <li class="list-group-item"><%= link_to "Sign In", new_user_session_path %></li>
+      <li class="list-group-item"><%= link_to "Sign Up", new_user_registration_path %></li>
+    <% end %>
+  </ul>
+</div>
