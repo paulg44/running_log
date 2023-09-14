@@ -2,6 +2,7 @@
 
 Rails.application.routes.draw do
   devise_for :users
+  resources :test
 
   # Main Page
   root to: "main#index"

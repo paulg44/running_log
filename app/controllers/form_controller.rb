@@ -6,6 +6,10 @@ class FormController < ApplicationController
     # Create new entry to database
     def create 
         @test = Test.new(test_params)
+
+        @test.user = current_user
+
+        respond_to do |format|
         if @test.save
             flash[:success] = "Run was logged successfully"
         #    Redirect to chosen path once entry submitted
@@ -14,6 +18,7 @@ class FormController < ApplicationController
             render :new
         end
     end
+end
 
    
     private 
