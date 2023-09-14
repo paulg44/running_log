@@ -1,7 +1,11 @@
 class DisplayController < ApplicationController
+    
+    # Authenticate logged in user
+    before_action :authenticate_user!
+
     def index 
-        @tests = Test.all 
-        @q = Test.ransack(params[:q])
+        @q = current_user.tests.ransack(params[:q])
+
         @tests = @q.result(distinct: true)
     end
 
