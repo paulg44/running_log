@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_09_16_202734) do
+ActiveRecord::Schema[7.0].define(version: 2023_09_16_210804) do
   create_table "log_fours", force: :cascade do |t|
     t.decimal "distance"
     t.decimal "duration"
@@ -54,8 +54,8 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_16_202734) do
 
   create_table "tests", force: :cascade do |t|
     t.date "date"
-    t.integer "distance"
-    t.time "duration"
+    t.decimal "distance"
+    t.string "duration"
     t.decimal "pace"
     t.string "surface"
     t.string "description"

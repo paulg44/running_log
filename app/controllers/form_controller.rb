@@ -6,6 +6,8 @@ class FormController < ApplicationController
     # Create new entry to database
     def create 
         @test = current_user.tests.build(test_params)
+        # Parsed duration
+        @test.duration = Time.parse(params[:test][:duration]).strftime("%H:%M:%S")
         if @test.save
             flash[:success] = "Run was logged successfully"
         #    Redirect to chosen path once entry submitted
@@ -13,6 +15,7 @@ class FormController < ApplicationController
         else
             render :new
         end
+    
     
 end
 
