@@ -1,0 +1,10 @@
+.form {
+  padding: 10px;
+  background-color: #eee;
+  border: 2px solid grey;
+  border-radius: 10px;
+}
+
+.form-label {
+  margin-right: 3px;
+}
