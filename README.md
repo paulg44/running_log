@@ -1,6 +1,6 @@
 # Running Log Overview
 
-I will aim to create a running log with an authenticated log in using Devise and be able to search the logs using Ransack
+I will aim to create a running log with an authenticated log in using Devise and be able to search the logs using Ransack. You do not have to sign up, you can sign in with the test ID and try the functionality with the provided data. Details below.
 
 # Current Functionality
 
@@ -31,6 +31,11 @@ I will aim to create a running log with an authenticated log in using Devise and
 - install Ruby on Rails (if not already)
 - in start command prompt ruby start server **rails server**
 - go to given web address (usually localhost:3000)
+
+## Test Data
+
+- email - test@test.com
+- password - testing
 
 ## Next Steps
 
