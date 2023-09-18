@@ -1,0 +1,7 @@
+.custom-navbar ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: transparent;
+  position: sticky;
+}
