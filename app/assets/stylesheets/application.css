@@ -12,13 +12,19 @@
  *
  *= require_tree .
  *= require_self
+ *= require homepage 
  */
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
+}
+
+body {
+  background: url("<%= asset_path('homepageBackground.jpg') %>") no-repeat
+    center/cover;
 }
 
 .btn {
