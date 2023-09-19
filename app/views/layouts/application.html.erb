@@ -15,7 +15,7 @@
     <%= stylesheet_link_tag "homepage", media: "all" %>
     <%= javascript_importmap_tags %>
   </head>
-  <body style="background-image: url(<%= asset_path("homepageBackground.jpg") %>); background-repeat: no-repeat; background-position: center center; background-size: cover">
+  <body style="background-image: url(<%= asset_path("homepageBackground.jpg") %>); background-repeat: no-repeat; background-position: center center; background-size: cover; color: white; height: 100vh; overflow: scroll">
     <%=  render partial: "shared/navbar" %>
     <%= yield %>
   </body>

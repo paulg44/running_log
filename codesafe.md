@@ -1,4 +1,5 @@
 <%= form_with model: @User do |form| %>
+
 <div class="mb-2">
 <%= form.label :username %>
 <%= form.text_field :username, class: "form-control", placeholder: "Enter username" %>
@@ -15,3 +16,7 @@
 <%= form.submit "Sign In", class: "btn btn-primary" %>
 </div>
 <%= link_to "No Account? Sign Up", sign_up_path %>
+
+<!-- Inline background image -->
+
+style="background-image: url(<%= asset_path("homepageBackground.jpg") %>); background-repeat: no-repeat; background-position: center center; background-size: cover"

@@ -39,7 +39,7 @@ I will aim to create a running log with an authenticated log in using Devise and
 
 ## Next Steps
 
-- move the delete button to each log instead of having an input, so I can remove the ID from table
+- move the delete button to each log instead of having an input, so I can remove the ID from table ##DONE##
 - add more functionality to the search options and a sorting option, by distance etc
 - add a user log in so they can retrieve their personal logs ##DONE##
 - enter distance and time and have the pace calculated automatically
@@ -83,3 +83,9 @@ I had to add something called turbo_method on the sign out page as that wouldn't
 
 Over the last couple of days I have managed to get the sign up/in etc completely working with Devise and have also managed to have user specific data retrieved and entered dependant on who is signed in, basically you can now only see your specific data. There seems to be a lot of background functions running, with authorization etc that I need to learn about more.
 I have started styling some parts but the next part is to make the search and sort form fully functional with plenty of options and sort out the "types" for the running log modal as they are still not quite correct.
+
+## CCS Issues
+
+I'm having issues with CSS, mainly since I added a background to the body (which took forever in itself). I can now only add styles inline and not in the files I already had. I also get some errors(Nil to String) that I believe are to do with the sprockets but I'm ending up down rabbit holes I can't see the end of. However the App still seems to work fine, I think I need an experienced person to take a look at it.
+So currently the CSS is a mix of a little bit of CSS files, some inline custom styling and some bootstrap, not ideal but it looks and works ok.
+This is something I'll have to look into a lot more.
