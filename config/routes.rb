@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   # GET log form page
   # POST to test table
-  get "/log", to: "log#index"
+  get "/log", to: "log#index", as:"log"
   get "log_run", to: "form#new"
   post "log_run", to: "form#create"
 
