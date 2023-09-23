@@ -6,7 +6,7 @@ RSpec.feature "Edit a run", type: :feature do
         visit display_path 
         save_and_open_page
 
-        find_link("Edit", wait: 10).click
+        find_link("Edit").click
 
         expect(page).to have_content("Edit Entry")
     end

@@ -9,7 +9,7 @@ class FormController < ApplicationController
         # Parsed duration
         @test.duration = Time.parse(params[:test][:duration]).strftime("%H:%M:%S")
         if @test.save
-            flash[:success] = "Run was logged successfully"
+          
         #    Redirect to chosen path once entry submitted
            redirect_to display_path
         else

@@ -4,7 +4,7 @@ class DisplayController < ApplicationController
     before_action :authenticate_user!
 
     def index 
-        @q = current_user.tests.ransack(params[:q])
+        @q = current_user.tests.order(created_at: :desc).ransack(params[:q])
 
         @tests = @q.result(distinct: true)
     end
