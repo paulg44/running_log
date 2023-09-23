@@ -1,13 +1,17 @@
+<%# Navbar %>
 <nav class="navbar navbar-expand-lg">
   <div class="collapse navbar-collapse navbar custom-navbar" id="navbarNav ">
     <ul>
+      <%# Homepage Link %>
       <li >
         <%= link_to "Home", root_path, style: "color: white"%>
       </li>
       <div class="custom-nav-sign">
+        <%# If user is signed in, display user information in top left & sign out %>
         <% if user_signed_in? %>
           <li><%= link_to "Hello, #{current_user.email}", edit_user_registration_path, style: "color: white" %></li>
           <li><%= link_to "Sign Out", destroy_user_session_path, data: {turbo_method: :delete}, style: "color: white" %></li>
+          <%# If user not signed in display Sign in or Up page %>
         <% else %>
           <li><%= link_to "Sign In", new_user_session_path%></li>
           <li><%= link_to "Sign Up", new_user_registration_path %></li>

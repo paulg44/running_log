@@ -6,7 +6,7 @@ class FormController < ApplicationController
     # Create new entry to database
     def create 
         @test = current_user.tests.build(test_params)
-        # Parsed duration
+        # Parsed duration (not currently working as expected)
         @test.duration = Time.parse(params[:test][:duration]).strftime("%H:%M:%S")
         if @test.save
           

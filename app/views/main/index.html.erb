@@ -1,9 +1,12 @@
+<%# Homepage once signed in %>
 <div class="homepage d-flex align-items-center justify-content-center flex-column">
-  <h1>Running Log
+  <h1>Run Tracker
   </h1>
   <h3>What would you like to do today</h3>
   <div class="d-flex justify-content-center">
-    <%= link_to "Add a run to log?", log_run_path, class: "nav-link", style: "color: white; border: 2px solid white; border-radius: 10px; margin: 10px;" %>
+    <%# Link to form for add enrty %>
+    <%= link_to "Add an entry to log?", log_run_path, class: "nav-link", style: "color: white; border: 2px solid white; border-radius: 10px; margin: 10px;" %>
+    <%# Link to running logs table %>
     <%= link_to "View running logs?", display_path, class: "nav-link", style: "color: white; border: 2px solid white; border-radius: 10px; margin: 10px" %>
   </div>
 </div>

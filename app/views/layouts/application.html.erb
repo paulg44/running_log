@@ -15,6 +15,7 @@
     <%= stylesheet_link_tag "homepage", media: "all" %>
     <%= javascript_importmap_tags %>
   </head>
+  <%# Once I added this inline style to have the background image site wide, the CSS files stopped working and I can now only change the CSS by using inline styles in every other file %>
   <body style="background-image: url(<%= asset_path("homepageBackground.jpg") %>); background-repeat: no-repeat; background-position: center center; background-size: cover; color: white; height: 100vh; overflow: scroll;">
     <%=  render partial: "shared/navbar" %>
     <%= yield %>
