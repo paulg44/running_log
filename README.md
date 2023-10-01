@@ -24,6 +24,7 @@ I will aim to create a running log with an authenticated log in using Devise and
 - Ransack Gem
 - Devise Gem
 - Bootstrap
+- Rspec and Capybara
 
 # Model Names
 
@@ -34,7 +35,10 @@ I will aim to create a running log with an authenticated log in using Devise and
 
 - git clone https://github.com/paulg44/running_log.git
 - install Ruby on Rails (if not already)
-- in start command prompt ruby start server **rails server**
+- run bundle install **installs any Gem dependencies**
+- run yarn install **installs any JavaScript dependencies**
+- run db:migrate **intitialise database**
+- run rails s **rails server** to start server
 - go to given web address (usually localhost:3000)
 
 ## Next Steps
@@ -43,6 +47,10 @@ I will aim to create a running log with an authenticated log in using Devise and
 - add more functionality to the search options and a sorting option, by distance etc
 - add a user log in so they can retrieve their personal logs ##DONE##
 - enter distance and time and have the pace calculated automatically
+- add other sports
+- deploy
+- fix hours, minutes, seconds in model (make it not a string)
+- more tests
 
 ## Day 1 - 3.5 hours
 
@@ -83,6 +91,7 @@ I had to add something called turbo_method on the sign out page as that wouldn't
 
 Over the last couple of days I have managed to get the sign up/in etc completely working with Devise and have also managed to have user specific data retrieved and entered dependant on who is signed in, basically you can now only see your specific data. There seems to be a lot of background functions running, with authorization etc that I need to learn about more.
 I have started styling some parts but the next part is to make the search and sort form fully functional with plenty of options and sort out the "types" for the running log modal as they are still not quite correct.
+I currently need to change a couple of the model types from strings to time or timedate for example as I would like the pace to be calculated automatically but needs these "types" correct first. I will add some more tests in due course and then think about ways to expand the application and probably more importantly, deploy the project.
 
 ## CCS Issues
 
