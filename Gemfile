@@ -10,8 +10,9 @@ gem "rails", "~> 7.0.7", ">= 7.0.7.2"
 gem "sprockets-rails"
 
 # Use sqlite3 as the database for Active Record
+gem "sqlite3"
 gem "sqlite3", group: :development
-gem 'pg', '0.18.1', group: :development
+gem 'pg', '~> 1.5', '>= 1.5.4', group: :development
 
 # Add rails factor
 gem 'rails_12factor', group: :development
