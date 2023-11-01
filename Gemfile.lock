@@ -278,7 +278,7 @@ DEPENDENCIES
   htmlbeautifier
   importmap-rails
   jbuilder
-  pg
+  pg (~> 1.5, >= 1.5.4)
   puma (~> 5.0)
   rails (~> 7.0.7, >= 7.0.7.2)
   rails_12factor
